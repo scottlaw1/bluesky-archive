@@ -1,0 +1,27 @@
+{
+  "name": "bluesky-archive",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^26.1.1",
+    "@types/node-cron": "^3.0.11",
+    "tsx": "^4.23.0",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@atproto/api": "^0.20.28",
+    "better-sqlite3": "^12.11.1",
+    "commander": "^15.0.0",
+    "dotenv": "^17.4.2",
+    "node-cron": "^4.6.0"
+  }
+}
