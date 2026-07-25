@@ -2,7 +2,7 @@ import { openDb } from "../db/client.js";
 import { createAuthedAgent, fetchAllMyPosts } from "./fetch.js";
 import { upsertPosts } from "./store.js";
 
-export async function runPipeline(dbPath = "bluesky.db") {
+export async function runPipeline(dbPath = "/app/data/bluesky.db") {
   const db = openDb(dbPath);
   const startedAt = new Date().toISOString();
 
