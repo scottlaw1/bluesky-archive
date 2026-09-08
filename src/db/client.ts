@@ -5,7 +5,7 @@ import { dirname, join } from "node:path";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-export function openDb(path = "bluesky.db") {
+export function openDb(path = "bluesky.db"): Database.Database {
   const db = new Database(path);
   db.pragma("journal_mode = WAL");
   const schema = readFileSync(join(__dirname, "schema.sql"), "utf-8");

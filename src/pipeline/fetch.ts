@@ -63,7 +63,7 @@ export async function fetchAllMyPosts(
     const res = await appview.getAuthorFeed({
       actor: did,
       limit: 100,
-      cursor,
+      ...(cursor ? { cursor } : {}),
       filter: "posts_no_replies", // adjust: posts_with_replies, posts_with_media, etc.
     });
 
